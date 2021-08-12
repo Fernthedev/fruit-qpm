@@ -1,0 +1,10 @@
+*.a
+*.so
+
+out
+
+include
+
+QPM/
+ndkpath.txt
+qpm.shared.json
