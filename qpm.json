@@ -4,7 +4,7 @@
   "info": {
     "name": "fruit",
     "id": "fruit",
-    "version": "0.0.1",
+    "version": "3.6.3",
     "url": "https://github.com/Fernthedev/fruit-qpm",
     "additionalData": {
       "staticLinking": true,
