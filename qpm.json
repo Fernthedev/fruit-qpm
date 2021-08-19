@@ -8,7 +8,9 @@
     "url": "https://github.com/Fernthedev/fruit-qpm",
     "additionalData": {
       "staticLinking": true,
-      "overrideSoName": "libfruit.a"
+      "overrideSoName": "libfruit.a",
+      "branchName": "version-v3.6.3",
+      "soLink": "https://github.com/Fernthedev/fruit-qpm/releases/download/v3.6.3/libfruit.a"
     }
   },
   "dependencies": [],
