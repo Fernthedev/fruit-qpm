@@ -26,6 +26,9 @@ jobs:
         with:
           ndk-version: r23
 
+      - name: Create ndkpath.txt
+        run: echo ${{ steps.setup-ndk.outputs.ndk-path }} > ${GITHUB_WORKSPACE}/ndkpath.txt
+
       #     - name: Cache QPM
       #       id: cache-qpm
       #       uses: actions/cache@v2
@@ -45,7 +48,6 @@ jobs:
           workflow: main.yml
           name: QPM-ubuntu-x64
           path: QPM
-          branch: static-libs
           repo: sc2ad/QuestPackageManager
 
       - name: QPM Restore
@@ -69,7 +71,6 @@ jobs:
         run: |
           cd ${GITHUB_WORKSPACE}
           chmod +x ./build.sh
-          export ANDROID_NDK_ROOT=${{ steps.setup-ndk.outputs.ndk-path }}
           ./build.sh
 
       # Commit the change to the package, .vscode/c_cpp_properties.json, and Android.mk
