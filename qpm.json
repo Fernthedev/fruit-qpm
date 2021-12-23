@@ -14,7 +14,9 @@
           "fruit/include/",
           "include/"
         ]
-      }
+      },
+      "branchName": "version-v3.6.4",
+      "soLink": "https://github.com/Fernthedev/fruit-qpm/releases/download/v3.6.4/libfruit.a"
     }
   },
   "dependencies": [],
