@@ -8,7 +8,13 @@
     "url": "https://github.com/Fernthedev/fruit-qpm",
     "additionalData": {
       "staticLinking": true,
-      "overrideSoName": "libfruit.a"
+      "overrideSoName": "libfruit.a",
+      "compileOptions": {
+        "systemIncludes": [
+          "fruit/include/",
+          "include/"
+        ]
+      }
     }
   },
   "dependencies": [],
